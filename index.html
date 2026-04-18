@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cred Capital - Simple Loans</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin:0;
+      background:#f7fafc;
+      color:#1a202c;
+    }
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      padding:20px 60px;
+      background:white;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-weight:600;
+      font-size:22px;
+    }
+
+    .btn {
+      background:#00a86b;
+      color:white;
+      padding:12px 20px;
+      border-radius:8px;
+      text-decoration:none;
+    }
+
+    .hero {
+      text-align:center;
+      padding:100px 20px;
+    }
+
+    .hero h1 {
+      font-size:48px;
+      margin-bottom:20px;
+    }
+
+    .hero p {
+      font-size:18px;
+      margin-bottom:30px;
+    }
+
+    .section {
+      padding:60px 40px;
+      text-align:center;
+    }
+
+    .cards {
+      display:flex;
+      gap:20px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .card {
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      width:250px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    input {
+      padding:10px;
+      width:250px;
+      border-radius:6px;
+      border:1px solid #ccc;
+    }
+
+    form button {
+      background:#00a86b;
+      color:white;
+      padding:10px 20px;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+    }
+
+    .footer {
+      background:#1a202c;
+      color:white;
+      padding:40px;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Cred Capital</div>
+  <a href="#apply" class="btn">Check Your Rate</a>
+</header>
+
+<section class="hero">
+  <h1>Simple Loans. Smarter Decisions.</h1>
+  <p>Fast, transparent personal loans with zero hidden fees.</p>
+  <a href="#apply" class="btn">Apply Now</a>
+</section>
+
+<section class="section">
+  <h2>Loan Options</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Personal Loans</h3>
+      <p>Flexible funding for your needs.</p>
+    </div>
+    <div class="card">
+      <h3>Debt Consolidation</h3>
+      <p>Combine and simplify payments.</p>
+    </div>
+    <div class="card">
+      <h3>Auto Loans</h3>
+      <p>Finance your next vehicle easily.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Cred Capital?</h2>
+  <div class="cards">
+    <div class="card">⚡ Fast Approval</div>
+    <div class="card">💸 No Hidden Fees</div>
+    <div class="card">🔒 Secure Process</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>How It Works</h2>
+  <div class="cards">
+    <div class="card">1. Apply Online</div>
+    <div class="card">2. Get Approved</div>
+    <div class="card">3. Receive Funds</div>
+  </div>
+</section>
+
+<!-- APPLY FORM -->
+<section class="section" id="apply">
+  <h2>Apply Now</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <input type="number" name="amount" placeholder="Loan Amount" required><br><br>
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Cred Capital. All rights reserved.</p>
+  <p>Disclaimer: Cred Capital is not a bank. Terms and conditions apply.</p>
+</footer>
+
+</body>
+</html>
