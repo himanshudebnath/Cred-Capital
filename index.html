@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cred Capital - Simple Loans</title>
+  <title>Revive Finance - Quick & Easy Loans</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin:0;
-      background:#f7fafc;
+      background:#f8fafc;
       color:#1a202c;
     }
 
@@ -22,24 +21,28 @@
       padding:20px 60px;
       background:white;
       box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      align-items:center;
     }
 
     .logo {
       font-weight:600;
       font-size:22px;
+      color:#0a2540;
     }
 
     .btn {
-      background:#00a86b;
+      background:#2563eb;
       color:white;
       padding:12px 20px;
       border-radius:8px;
       text-decoration:none;
+      font-weight:500;
     }
 
     .hero {
       text-align:center;
       padding:100px 20px;
+      background:linear-gradient(to right, #e0f2fe, #f8fafc);
     }
 
     .hero h1 {
@@ -50,10 +53,11 @@
     .hero p {
       font-size:18px;
       margin-bottom:30px;
+      color:#475569;
     }
 
     .section {
-      padding:60px 40px;
+      padding:70px 40px;
       text-align:center;
     }
 
@@ -66,33 +70,50 @@
 
     .card {
       background:white;
-      padding:20px;
+      padding:25px;
       border-radius:12px;
-      width:250px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.05);
+      width:260px;
+      box-shadow:0 6px 15px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom:10px;
+    }
+
+    .highlight {
+      color:#2563eb;
+      font-weight:600;
     }
 
     input {
-      padding:10px;
-      width:250px;
+      padding:12px;
+      width:260px;
       border-radius:6px;
-      border:1px solid #ccc;
+      border:1px solid #cbd5e1;
     }
 
     form button {
-      background:#00a86b;
+      background:#2563eb;
       color:white;
-      padding:10px 20px;
+      padding:12px 20px;
       border:none;
       border-radius:6px;
       cursor:pointer;
+      font-weight:500;
+    }
+
+    .trust {
+      font-size:14px;
+      color:#64748b;
+      margin-top:10px;
     }
 
     .footer {
-      background:#1a202c;
+      background:#0f172a;
       color:white;
       padding:40px;
       text-align:center;
+      font-size:14px;
     }
   </style>
 </head>
@@ -100,13 +121,13 @@
 <body>
 
 <header>
-  <div class="logo">Cred Capital</div>
+  <div class="logo">Revive Finance</div>
   <a href="#apply" class="btn">Check Your Rate</a>
 </header>
 
 <section class="hero">
-  <h1>Simple Loans. Smarter Decisions.</h1>
-  <p>Fast, transparent personal loans with zero hidden fees.</p>
+  <h1>Quick, Easy Loans for Every Situation</h1>
+  <p>Access funds fast with transparent rates. No hidden fees. Designed for U.S. customers.</p>
   <a href="#apply" class="btn">Apply Now</a>
 </section>
 
@@ -115,25 +136,25 @@
   <div class="cards">
     <div class="card">
       <h3>Personal Loans</h3>
-      <p>Flexible funding for your needs.</p>
+      <p>Cover expenses, emergencies, or life goals.</p>
     </div>
     <div class="card">
       <h3>Debt Consolidation</h3>
-      <p>Combine and simplify payments.</p>
+      <p>Simplify payments into one affordable plan.</p>
     </div>
     <div class="card">
-      <h3>Auto Loans</h3>
-      <p>Finance your next vehicle easily.</p>
+      <h3>Credit Rebuild</h3>
+      <p>Get back on track with smarter financing.</p>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <h2>Why Cred Capital?</h2>
+  <h2>Why Choose <span class="highlight">Revive Finance</span>?</h2>
   <div class="cards">
-    <div class="card">⚡ Fast Approval</div>
+    <div class="card">⚡ Fast Approval in Minutes</div>
     <div class="card">💸 No Hidden Fees</div>
-    <div class="card">🔒 Secure Process</div>
+    <div class="card">🔒 Secure & Encrypted</div>
   </div>
 </section>
 
@@ -141,25 +162,26 @@
   <h2>How It Works</h2>
   <div class="cards">
     <div class="card">1. Apply Online</div>
-    <div class="card">2. Get Approved</div>
+    <div class="card">2. Get Matched</div>
     <div class="card">3. Receive Funds</div>
   </div>
 </section>
 
-<!-- APPLY FORM -->
 <section class="section" id="apply">
-  <h2>Apply Now</h2>
+  <h2>Check Your Rate</h2>
   <form action="https://formspree.io/f/yourformid" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br><br>
-    <input type="email" name="email" placeholder="Your Email" required><br><br>
-    <input type="number" name="amount" placeholder="Loan Amount" required><br><br>
-    <button type="submit">Submit Application</button>
+    <input type="text" name="name" placeholder="Full Name" required><br><br>
+    <input type="email" name="email" placeholder="Email Address" required><br><br>
+    <input type="number" name="amount" placeholder="Loan Amount ($)" required><br><br>
+    <button type="submit">Get Started</button>
   </form>
+  <p class="trust">✔ No impact on credit score ✔ Secure 256-bit encryption</p>
 </section>
 
 <footer class="footer">
-  <p>© 2026 Cred Capital. All rights reserved.</p>
-  <p>Disclaimer: Cred Capital is not a bank. Terms and conditions apply.</p>
+  <p>© 2026 Revive Finance. All rights reserved.</p>
+  <p>Revive Finance is not a lender. We connect borrowers with lending partners.</p>
+  <p>Terms | Privacy | Disclosures</p>
 </footer>
 
 </body>
