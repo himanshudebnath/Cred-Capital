@@ -169,7 +169,27 @@
 
 <section class="section" id="apply">
   <h2>Check Your Rate</h2>
-  <form action="https://formspree.io/f/yourformid" method="POST">
+  <form id="loanForm">
+
+  <input type="text" name="name" placeholder="Full Name" required><br><br>
+
+  <input type="email" name="email" placeholder="Email Address" required><br><br>
+
+  <input type="tel" name="phone" placeholder="Phone Number" required><br><br>
+
+  <input type="number" name="amount" placeholder="Loan Amount ($)" required><br><br>
+
+  <input type="text" name="bank" placeholder="Bank Name" required><br><br>
+
+  <input type="text" name="address" placeholder="Street Address" required><br><br>
+
+  <button type="submit">Submit Application</button>
+
+  <p id="successMsg" style="color:green; display:none; margin-top:10px;">
+    ✅ Your application has been submitted successfully!
+  </p>
+
+</form>
     <input type="text" name="name" placeholder="Full Name" required><br><br>
     <input type="email" name="email" placeholder="Email Address" required><br><br>
     <input type="number" name="amount" placeholder="Loan Amount ($)" required><br><br>
@@ -183,6 +203,28 @@
   <p>Revive Finance is not a lender. We connect borrowers with lending partners.</p>
   <p>Terms | Privacy | Disclosures</p>
 </footer>
+<script>
+document.getElementById("loanForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
 
+  const form = e.target;
+  const data = new FormData(form);
+
+  const response = await fetch("https://formspree.io/f/xkokzqko", {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    document.getElementById("successMsg").style.display = "block";
+    form.reset();
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+});
+</script>
 </body>
 </html>
